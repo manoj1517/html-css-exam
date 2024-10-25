@@ -1,0 +1,376 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: linear-gradient(to right, #000a0b, #fff75f);
+    color: rgb(15, 13, 13);
+    padding: 20px;
+    text-align: center;
+}
+.float-img {
+    width: 200px; 
+    height: auto; /* Keep the aspect ratio */
+    float: left; /* Float the image to the left */
+    margin: 30px; /* Add space around the image */
+}
+
+ /* General Navbar Styles */
+ .navbar {
+    background-color: #333; /* Dark background */
+    transition: all 0.3s;
+  }
+  
+  .navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ff0000;
+  }
+  
+  .navbar-toggler {
+    border: none;
+    color: #e00f0f;
+  }
+  nav ul li a {
+    background-color: rgb(0, 0, 0); /* Change background on hover */
+    border-radius: 5px; /* Optional: Rounded corners for hover effect */
+}
+  
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  }
+  
+  .navbar-nav .nav-link {
+    color: #b14949;
+    padding: 10px;
+    font-size: 1rem;
+    transition: color 0.3s;
+  }
+  
+  .navbar-nav .nav-link:hover {
+    color: #0602e6;
+  }
+  
+  /* Media query for smaller screens */
+  @media (max-width: 576px) {
+    .navbar {
+        padding: 0.5rem;
+    }
+    
+    /* Smaller font sizes for mobile view */
+    .navbar-brand {
+        font-size: 1rem;
+    }
+    
+    .nav-link {
+        font-size: 0.9rem;
+    }
+  }
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.container {
+    display: flex;
+    margin: 20px;
+}
+
+aside {
+    flex: 1;
+    background-color: #1caab1;
+    padding: 20px;
+    margin-right : 20px;
+    border: 1px solid #139eba;
+}
+
+aside ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+aside ul li {
+    margin: 15px 0;
+}
+
+aside ul li img {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+main {
+    flex: 3;
+    padding: 20px;
+}
+
+
+.article {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.article-column {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.article-column:last-child {
+    margin-right: 0;
+}
+
+.scalable-img {
+    width: 100%;
+    height: auto;
+}
+
+.carousel {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+
+.carousel img {
+    width: 200px;
+    height: auto;
+    margin: 10px;
+}
+
+audio {
+    width: 100%;
+}
+
+.scalable-img {
+    width: 500px;  /* Set the width to 300 pixels */
+    height: 300px; /* Set the height to 200 pixels */
+    object-fit: cover; /* Maintain aspect ratio while filling the space */
+}
+
+/* General styling for the contact section */
+.contact {
+    background-color: #f4f4f4; /* Light background */
+    padding: 60px 0;
+    text-align: center;
+  }
+  
+  /* Styling for the heading */
+  .contact-text h2 {
+    font-size: 36px;
+    color: #e2a808;
+    margin-bottom: 20px;
+    font-weight: 700;
+  }
+  
+  .contact-text span {
+    color: #3498db; /* Highlight color */
+  }
+  
+  /* Styling for the contact form */
+  .contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .contact-form form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Input and textarea styling */
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .contact-form input:focus,
+  .contact-form textarea:focus {
+    outline: none;
+    border-color: #3498db; /* Focus color */
+  }
+  
+  /* Button styling */
+  .contact-form button {
+    background-color: #55f778;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .contact-form button:hover {
+    background-color: #0bce35; /* Darker shade on hover */
+  }
+  
+
+footer {
+    background: linear-gradient(to right, #000000, #000000);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+/* Mobile View */
+@media (max-width: 768px) {
+    /* Header adjustments */
+    header {
+        padding: 15px;
+        text-align: center;
+    }
+
+    /* Navigation - Stack links vertically */
+    nav ul {
+        text-align: center;
+        padding: 0;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    /* Container adjustments - Stack columns */
+    .container {
+        flex-direction: column;
+        margin: 10px;
+    }
+
+    /* Sidebar adjustments */
+    aside {
+        margin: 0 0 20px 0;
+        padding: 15px;
+    }
+
+    /* Main content adjustments */
+    main {
+        padding: 15px;
+    }
+
+    /* Article columns - Stack articles vertically */
+    .article {
+        flex-direction: column;
+    }
+
+    .article-column {
+        margin: 0 0 15px 0;
+    }
+
+    /* Scalable image */
+    .scalable-img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Carousel adjustments */
+    .carousel img {
+        width: 100%;
+        height: auto;
+        margin: 5px;
+    }
+
+    /* Contact Section adjustments */
+    .contact {
+        padding: 30px 10px;
+    }
+
+    .contact-text h2 {
+        font-size: 28px;
+        margin-bottom: 15px;
+    }
+
+    .contact-form {
+        max-width: 100%;
+    }
+
+    /* Input, textarea, and button adjustments */
+    .contact-form input,
+    .contact-form textarea {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .contact-form button {
+        padding: 12px 20px;
+        font-size: 16px;
+    }
+
+    /* Footer adjustments */
+    footer {
+        padding: 15px;
+        font-size: 0.9rem;
+    }
+}
+main{
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f8f9fa;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .container {
+        max-width: 600px;
+        margin: 50px auto;
+        padding: 20px;
+        background-color: #ffffff;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    h2 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    .form-group {
+        margin-bottom: 15px;
+    }
+    
+    label {
+        display: block;
+        margin-bottom: 5px;
+    }
+    
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 16px;
+    }
+    
+    button {
+        width: 100%;
+        padding: 10px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+    
+    button:hover {
+        background-color: #0056b3;
+    }
+    
+}
